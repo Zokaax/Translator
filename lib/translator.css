@@ -1,0 +1,22 @@
+header, section, footer{
+	display: block;
+	border: 1px #000 solid;
+}
+#frombox{
+	float: left;
+	width: 40%;
+}
+
+#change{
+	float: left;
+	width: 15%;
+}
+
+#tobox{
+	float: left;
+	width: 40%;
+}
+
+footer{
+	clear: both;
+}
