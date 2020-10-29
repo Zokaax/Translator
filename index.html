@@ -3,41 +3,53 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="referrer" content="no-referrer"> 
 	<link rel="stylesheet" href="lib/normalize.css">
 	<link rel="stylesheet" href="lib/translator.css">
 	<script type="text/javascript" src="lib/translator.js"></script>
 	<title>Translator</title>
 </head>
 <body>
-	<div id="grupo">
+	<div id="group">
 		<header>
 			<h1>Translator</h1>
 		</header>
 
 		<section>
-			<div id="box">
-				<div id="frombox">
-					<span>From:</span>
-					<Select>
-						<option value="Es">Español</option>
-						<option value="En">Ingles</option>
-					</Select>
-					<textarea name="" id="from" cols="30" rows="10" placeholder="Write to translate"></textarea>
+				<div id="from_box">
+					<div id="from_options">
+						<span>From:</span>
+						<Select>
+							<option value="en">English</option>
+							<option value="es">Spanish</option>
+							<option value="ro">Romanian</option>
+						</Select>
+					</div>
+					<div>
+						<textarea name="" id="from" cols="30" rows="10" placeholder="Write here to translate"></textarea>
+					</div>
 				</div>
 
-				<div id="change">
-					<input type="button" name="change" value="Intercambiar">
+
+				<div id="to_box">
+					<div id="to_options">
+						<span>To:</span>
+						<Select>
+							<option value="en">English</option>
+							<option value="es">Spanish</option>
+							<option value="ro">Romanian</option>
+						</Select>
+					</div>
+					<div>
+						<textarea name="" id="to" cols="30" rows="10" placeholder="Translation will be here."></textarea>
+					</div>
 				</div>
 
-				<div id="tobox">
-					<span>To:</span>
-					<Select>
-						<option value="Es">Español</option>
-						<option value="En">Ingles</option>
-					</Select>
-					<textarea name="" id="to" cols="30" rows="10" placeholder="Translation will be here.">hasads</textarea>
+				<div id="buttons">
+					<input type="button" id="change" value="Switch">
+					<input type="button" id="translate" value="Translate">
 				</div>
-			</div>
+
 		</section>
 
 		<footer>

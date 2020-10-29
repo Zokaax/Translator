@@ -2,21 +2,42 @@ header, section, footer{
 	display: block;
 	border: 1px #000 solid;
 }
-#frombox{
-	float: left;
-	width: 40%;
+body{
+	width: 100%;
+	text-align: center;
 }
 
-#change{
-	float: left;
-	width: 15%;
+#group{
+	width: 80%;
+	text-align: left;
+	margin: auto;
 }
 
-#tobox{
-	float: left;
-	width: 40%;
+#group header h1{
+	padding: 0px 5%;
+}
+
+#from_box, #to_box{
+	width: 36%;
+	padding: 1%;
+	display: inline-block;
+}
+
+textarea{
+	width:100%;
+}
+
+#buttons{
+	width: 18%;
+	padding: 0% 1%;
+	text-align: center;
+	display: inline-block;
+}
+
+#buttons input{
+	margin: 1%;
 }
 
 footer{
-	clear: both;
+	text-align: center;
 }
